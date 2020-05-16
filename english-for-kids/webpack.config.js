@@ -39,11 +39,10 @@ const conf = {
             template: './index.html'
         }),
         new CopyPlugin([
-            { from: './src/', to: './' },
-        ]),
+            { from: './src/assets', to: './assets' },
+            { from: './src/style', to: './style' },
+            ]),
     ]
 }
 return conf;
 }
-
-// module.exports = conf;
